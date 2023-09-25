@@ -1,10 +1,7 @@
-import math as m
+x = float(input("Digite o valor de X: "))
 
-ang = float(input("\nDigite o ângulo em graus: "))
-rang = ang * (m.pi / 180)
-
-if ((rang > m.pi / 2 and rang <= m.pi) or (rang > 3 * m.pi/2 and rang <= 2 * m.pi)):
-    print(f"\nSeno: {rang}")
+if (x > 4.0 or x < (-4.0)):
+    fx = (5*x+3)/(x**2-16)**0.5
+    print(f"\nf(x) = {fx}")
 else:
-    print(f"\nCo-seno: {rang}")
-print("\n")
+    print("\nNão pode ser feita.")
